@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="283dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Informe o numero de homens" />
+
+        <SeekBar
+            android:id="@+id/seekBarHomem"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="46dp"
+            android:max="30"
+            android:progress="1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="81dp"
+            android:text="Informe o numero de mlheres" />
+
+        <SeekBar
+            android:id="@+id/seekBarMulher"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="110dp"
+            android:max="30"
+            android:progress="1" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="146dp"
+            android:text="Informe o numero de crianças" />
+
+        <SeekBar
+            android:id="@+id/seekBarCrianca"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="179dp"
+            android:max="30"
+            android:progress="1" />
+
+        <Button
+            android:id="@+id/calcular"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="213dp"
+            android:text="Calcular" />
+
+        <TextView
+            android:id="@+id/ResultCarne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginBottom="204dp" />
+
+        <TextView
+            android:id="@+id/ResultLinguica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginBottom="159dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
